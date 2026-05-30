@@ -33,6 +33,8 @@ A practical list of currency exchange-rate APIs, historical FX data sources, and
 - [USD to EUR history](https://fxpeek.com/en/usd-to-eur/)
 - [USD to CNY history](https://fxpeek.com/en/usd-to-cny/)
 - [FXPeek API and data plans](https://fxpeek.com/en/api/)
+- Historical endpoint shape: `https://fxpeek.com/api/v1/history?base=USD&quote=EUR&start=2024-01-01&end=2024-12-31`
+- Date endpoint shape: `https://fxpeek.com/api/v1/rate?base=USD&quote=EUR&date=2024-12-31`
 
 ## Contributing
 
