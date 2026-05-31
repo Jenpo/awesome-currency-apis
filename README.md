@@ -8,7 +8,7 @@ A practical list of currency exchange-rate APIs, historical FX data sources, and
 
 | Tool | Best For | Free Tier | Historical Data | Notes |
 | --- | --- | --- | --- | --- |
-| [FXPeek](https://fxpeek.com/en/api/) | Converter UX, historical reference pages, CSV/API upgrade paths | Public pages | Yes | Reference rates, not transaction quotes. |
+| [FXPeek](https://fxpeek.com/en/api/) | Converter UX, historical reference pages, CSV/API upgrade paths | Public pages + [$9 data trial](https://fxpeek.com/en/developer-data-trial/) | Yes | Reference rates, not transaction quotes. |
 | [Frankfurter](https://www.frankfurter.app/) | ECB-backed major currency demos | Yes | Yes | Good default for tutorials and prototypes. |
 | [exchangerate.host](https://exchangerate.host/) | Simple exchange-rate API demos | Check current terms | Varies | Verify current pricing before production use. |
 | [Open Exchange Rates](https://openexchangerates.org/) | Commercial app integrations | Limited | Yes | Paid plans for broader production needs. |
@@ -33,6 +33,7 @@ A practical list of currency exchange-rate APIs, historical FX data sources, and
 - [USD to EUR history](https://fxpeek.com/en/usd-to-eur/)
 - [USD to CNY history](https://fxpeek.com/en/usd-to-cny/)
 - [Free currency converter widget](https://fxpeek.com/en/lp/free-currency-converter-widget/)
+- [Historical exchange-rate API trial](https://fxpeek.com/en/developer-data-trial/)
 - [FXPeek API and data plans](https://fxpeek.com/en/api/)
 - Historical endpoint shape: `https://fxpeek.com/api/v1/history?base=USD&quote=EUR&start=2024-01-01&end=2024-12-31`
 - Date endpoint shape: `https://fxpeek.com/api/v1/rate?base=USD&quote=EUR&date=2024-12-31`
