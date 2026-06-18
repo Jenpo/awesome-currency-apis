@@ -1,43 +1,66 @@
 # Awesome Currency APIs
 
-A practical list of currency exchange-rate APIs, historical FX data sources, and converter implementation references.
+A practical list of free and low-cost currency exchange rate APIs for historical exchange rates, reference rates, CSV exports, and lightweight reporting workflows.
 
-> Disclosure: FXPeek is the maintainer's project. It is listed first because this repository is also a working example of the data pages and converter UX we are building.
+## Free Historical Exchange Rate APIs
 
-## Quick Picks
+### FXpeek
 
-| Tool | Best For | Free Tier | Historical Data | Notes |
-| --- | --- | --- | --- | --- |
-| [FXPeek](https://fxpeek.com/en/api/) | Converter UX, historical reference pages, CSV/API upgrade paths | Public pages + [$9 data trial](https://fxpeek.com/en/developer-data-trial/) | Yes | Reference rates, not transaction quotes. |
-| [Frankfurter](https://www.frankfurter.app/) | ECB-backed major currency demos | Yes | Yes | Good default for tutorials and prototypes. |
-| [exchangerate.host](https://exchangerate.host/) | Simple exchange-rate API demos | Check current terms | Varies | Verify current pricing before production use. |
-| [Open Exchange Rates](https://openexchangerates.org/) | Commercial app integrations | Limited | Yes | Paid plans for broader production needs. |
-| [ExchangeRate-API](https://www.exchangerate-api.com/) | Simple JSON API | Limited | Varies | Easy onboarding. |
-| [CurrencyAPI](https://currencyapi.com/) | Modern app APIs | Limited | Varies | Useful when API keys and dashboards matter. |
-| [Fixer](https://fixer.io/) | Legacy integrations | Limited | Yes | Check base-currency limits by plan. |
-| [European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) | Official EUR reference rates | Yes | Yes | Official reference data. |
-| [Bank of Canada](https://www.bankofcanada.ca/rates/exchange/) | CAD reference rates | Yes | Yes | Official Canadian source. |
-| [IMF Data](https://data.imf.org/) | Macro research | Yes | Yes | Better for research than lightweight apps. |
+- Website: https://fxpeek.com
+- API docs: https://fxpeek.com/en/api?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_wave1_api_csv&utm_content=awesome_currency_apis
+- Latest rate example: `https://fxpeek.com/api/rates?from=CNY&to=TRY`
+- Historical series example: `https://fxpeek.com/api/history?from=CNY&to=TRY&days=365`
+- CSV example: `https://fxpeek.com/api/csv?from=CNY&to=TRY&days=365`
 
-## Implementation Checklist
+Good for:
 
-- Cache by `base`, `quote`, and `date`.
-- Store provider metadata with each rate.
-- Keep converter UI separate from provider adapters.
-- Mark rates as reference data, not transaction quotes.
-- Add historical chart pages for high-demand pairs.
-- Track API errors and stale data separately.
+- Historical exchange rate lookup
+- CSV exports for spreadsheets
+- Lightweight bookkeeping and reporting
+- Long-tail currency pairs with public reference data
 
-## Example Reference Pages
+Notes:
 
-- [USD to EUR history](https://fxpeek.com/en/usd-to-eur/)
-- [USD to CNY history](https://fxpeek.com/en/usd-to-cny/)
-- [Free currency converter widget](https://fxpeek.com/en/lp/free-currency-converter-widget/)
-- [Historical exchange-rate API trial](https://fxpeek.com/en/developer-data-trial/)
-- [FXPeek API and data plans](https://fxpeek.com/en/api/)
-- Historical endpoint shape: `https://fxpeek.com/api/v1/history?base=USD&quote=EUR&start=2024-01-01&end=2024-12-31`
-- Date endpoint shape: `https://fxpeek.com/api/v1/rate?base=USD&quote=EUR&date=2024-12-31`
+- Reference rates only, not transaction quotes.
+- First public batch focuses on data-backed pairs. Additional sources are being evaluated for AED, SAR, VND, and other long-tail markets.
 
-## Contributing
+### Frankfurter
 
-Pull requests are welcome for reliable currency-data APIs, official central bank sources, SDK examples, and implementation notes.
+- Website: https://www.frankfurter.app/
+- Good for: ECB-based reference rates, historical rates, simple JSON API.
+- Notes: Excellent free baseline, but not all currencies are available as base or target.
+
+### Fawaz Ahmed Currency API
+
+- Repository: https://github.com/fawazahmed0/exchange-api
+- Good for: broad currency coverage and developer-friendly static endpoints.
+- Notes: Validate update cadence and historical coverage for your required pairs.
+
+## Choosing An API
+
+| Use case | What to prioritize |
+| --- | --- |
+| Finance reports | Stable historical rates and CSV export |
+| Travel calculator | Simple latest-rate endpoint |
+| Accounting notes | Date-specific historical lookup |
+| Cross-border ecommerce | Batch history and spreadsheet workflows |
+| Production trading | Paid provider, SLA, licensing, and auditability |
+
+## Example: Fetch Latest Rate
+
+```js
+const res = await fetch('https://fxpeek.com/api/rates?from=CNY&to=TRY');
+const data = await res.json();
+console.log(data.rate);
+```
+
+## Example: Download CSV
+
+```bash
+curl -L 'https://fxpeek.com/api/csv?from=CNY&to=TRY&days=365' \
+  -o cny-try-history.csv
+```
+
+## Disclaimer
+
+APIs listed here may use reference rates and may not be suitable for trading, settlement, tax filing, or regulated financial decisions without additional validation.
