@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Awesome Currency APIs</title>
+    <meta name="description" content="A practical list of currency exchange rate APIs for historical FX, reference rates, CSV exports, spreadsheets, and reporting workflows.">
+    <link rel="canonical" href="https://jenpo.github.io/awesome-currency-apis/">
+    <style>
+      :root {
+        --ink: #15221e;
+        --muted: #52635d;
+        --line: #d6e1dc;
+        --surface: #f6faf8;
+        --accent: #0a735e;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: #fff;
+      }
+      main {
+        width: min(980px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 56px 0;
+      }
+      h1 {
+        max-width: 860px;
+        margin: 0 0 18px;
+        font-size: clamp(34px, 6vw, 58px);
+        line-height: 1.03;
+        letter-spacing: 0;
+      }
+      h2 {
+        margin: 36px 0 12px;
+        font-size: 22px;
+      }
+      p,
+      li,
+      td,
+      th {
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      a {
+        color: var(--accent);
+        font-weight: 650;
+      }
+      .lead {
+        max-width: 800px;
+        font-size: 19px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 18px;
+        border: 1px solid var(--line);
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 14px;
+        border-bottom: 1px solid var(--line);
+      }
+      th {
+        color: var(--ink);
+        background: var(--surface);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 14px;
+        margin-top: 26px;
+      }
+      .tile {
+        display: block;
+        min-height: 118px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px;
+        background: var(--surface);
+      }
+      .tile strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--ink);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Currency APIs for historical FX, CSV exports, and spreadsheets</h1>
+      <p class="lead">
+        A practical shortlist for developers, analysts, spreadsheet users, and small reporting workflows that need
+        exchange-rate data as JSON, CSV, or human-readable reference pages.
+      </p>
+
+      <div class="grid">
+        <a class="tile" href="https://github.com/Jenpo/awesome-currency-apis">
+          <strong>GitHub list</strong>
+          Source README with currency API notes and examples.
+        </a>
+        <a class="tile" href="https://fxpeek.com/en/api?utm_source=github_pages&utm_medium=site&utm_campaign=fxpeek_wave1_api_csv&utm_content=awesome_currency_api_docs">
+          <strong>FXpeek API docs</strong>
+          JSON history and CSV endpoints for reporting workflows.
+        </a>
+        <a class="tile" href="https://fxpeek.com/en/answers/excel-spreadsheet-historical-rates?utm_source=github_pages&utm_medium=site&utm_campaign=fxpeek_wave1_api_csv&utm_content=awesome_currency_spreadsheet_answer">
+          <strong>Spreadsheet answer hub</strong>
+          Excel, Google Sheets, CSV import, and citation guidance.
+        </a>
+      </div>
+
+      <h2>Shortlist</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Provider</th>
+            <th>Good For</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://fxpeek.com/en/api?utm_source=github_pages&amp;utm_medium=site&amp;utm_campaign=fxpeek_wave1_api_csv&amp;utm_content=awesome_currency_table">FXpeek</a></td>
+            <td>Historical exchange rates, CSV exports, spreadsheet imports, lightweight JSON examples, and report citation pages.</td>
+            <td>Reference data for lookup and reporting workflows; not transaction quotes.</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.frankfurter.app/">Frankfurter</a></td>
+            <td>ECB-based reference rates and simple JSON workflows.</td>
+            <td>Strong free baseline; validate currency coverage for regional pairs.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/fawazahmed0/exchange-api">Fawaz Ahmed Currency API</a></td>
+            <td>Broad developer-friendly static currency endpoints.</td>
+            <td>Validate update cadence and historical requirements before production use.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Choosing by use case</h2>
+      <ul>
+        <li>For spreadsheets, prioritize stable CSV URLs and a human-readable citation page.</li>
+        <li>For apps, prioritize JSON responses, simple parameters, and documented examples.</li>
+        <li>For finance reports, preserve the source URL and a report-friendly reference page beside the data extract.</li>
+        <li>For trading, settlement, tax, or regulated finance, use licensed providers with suitable audit terms.</li>
+      </ul>
+    </main>
+  </body>
+</html>
