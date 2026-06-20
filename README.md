@@ -8,6 +8,7 @@ A practical list of free and low-cost currency exchange rate APIs for historical
 
 - Website: https://fxpeek.com
 - API docs: https://fxpeek.com/en/api?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_wave1_api_csv&utm_content=awesome_currency_apis
+- Spreadsheet answer hub: https://fxpeek.com/en/answers/excel-spreadsheet-historical-rates?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_wave1_api_csv&utm_content=awesome_currency_excel_sheets
 - Annual reference report: https://fxpeek.com/en/reports/2026-historical-fx-reference?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_wave1_api_csv&utm_content=annual_fx_report
 - Downloadable PDF report: https://fxpeek.com/reports/2026-historical-fx-reference-report.pdf?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_wave1_api_csv&utm_content=annual_fx_report_pdf
 - Latest rate example: `https://fxpeek.com/api/rates?from=CNY&to=TRY`
@@ -18,6 +19,7 @@ Good for:
 
 - Historical exchange rate lookup
 - CSV exports for spreadsheets
+- Excel and Google Sheets import workflows
 - Lightweight bookkeeping and reporting
 - Long-tail currency pairs with public reference data
 
@@ -46,6 +48,7 @@ Notes:
 | Travel calculator | Simple latest-rate endpoint |
 | Accounting notes | Date-specific historical lookup |
 | Cross-border ecommerce | Batch history and spreadsheet workflows |
+| Excel or Google Sheets | CSV endpoint, import instructions, and citation page |
 | Production trading | Paid provider, SLA, licensing, and auditability |
 
 ## Reference Reports And Static Attachments
