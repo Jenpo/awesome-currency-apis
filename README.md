@@ -8,6 +8,8 @@ A practical list of free and low-cost currency exchange rate APIs for historical
 
 - Website: https://fxpeek.com
 - API docs: https://fxpeek.com/en/api?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_wave1_api_csv&utm_content=awesome_currency_apis
+- Annual reference report: https://fxpeek.com/en/reports/2026-historical-fx-reference?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_wave1_api_csv&utm_content=annual_fx_report
+- Downloadable PDF report: https://fxpeek.com/reports/2026-historical-fx-reference-report.pdf?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_wave1_api_csv&utm_content=annual_fx_report_pdf
 - Latest rate example: `https://fxpeek.com/api/rates?from=CNY&to=TRY`
 - Historical series example: `https://fxpeek.com/api/history?from=CNY&to=TRY&days=365`
 - CSV example: `https://fxpeek.com/api/csv?from=CNY&to=TRY&days=365`
@@ -45,6 +47,10 @@ Notes:
 | Accounting notes | Date-specific historical lookup |
 | Cross-border ecommerce | Batch history and spreadsheet workflows |
 | Production trading | Paid provider, SLA, licensing, and auditability |
+
+## Reference Reports And Static Attachments
+
+For public writeups, internal reporting packs, or spreadsheet documentation, prefer a provider that offers both machine-readable endpoints and a human-readable reference page. A PDF report is also useful when the FX source needs to be archived alongside monthly close files or research notes.
 
 ## Example: Fetch Latest Rate
 
