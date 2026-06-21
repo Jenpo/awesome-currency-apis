@@ -9,6 +9,12 @@ A practical list of free and low-cost currency exchange rate APIs for historical
 - Website: https://fxpeek.com
 - API docs: https://fxpeek.com/en/api?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_wave1_api_csv&utm_content=awesome_currency_apis
 - Spreadsheet answer hub: https://fxpeek.com/en/answers/excel-spreadsheet-historical-rates?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_wave1_api_csv&utm_content=awesome_currency_excel_sheets
+- Chinese API and CSV: https://fxpeek.com/zh/api?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_locale_api_csv&utm_content=awesome_zh_api
+- Indonesian API and CSV: https://fxpeek.com/id/api?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_locale_api_csv&utm_content=awesome_id_api
+- Vietnamese API and CSV: https://fxpeek.com/vi/api?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_locale_api_csv&utm_content=awesome_vi_api
+- Thai API and CSV: https://fxpeek.com/th/api?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_locale_api_csv&utm_content=awesome_th_api
+- Tagalog API and CSV: https://fxpeek.com/tl/api?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_locale_api_csv&utm_content=awesome_tl_api
+- Localized historical FX API landing: https://fxpeek.com/zh/campaign/historical-fx-api?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_locale_api_csv&utm_content=awesome_zh_campaign
 - Annual reference report: https://fxpeek.com/en/reports/2026-historical-fx-reference?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_wave1_api_csv&utm_content=annual_fx_report
 - Downloadable PDF report: https://fxpeek.com/reports/2026-historical-fx-reference-report.pdf?utm_source=github&utm_medium=repo&utm_campaign=fxpeek_wave1_api_csv&utm_content=annual_fx_report_pdf
 - Latest rate example: `https://fxpeek.com/api/rates?from=CNY&to=TRY`
